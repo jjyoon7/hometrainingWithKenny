@@ -1,0 +1,38 @@
+.modal-background-div {
+    display: grid;
+    place-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 234, 0.7);
+}
+
+.modal-message-div {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    padding: 4rem;
+    width: 35%;
+    background: white;
+    row-gap: 2rem;
+    grid-template-rows: repeat(auto-fit, 1fr);
+    grid-template-areas: "modal-message"
+                         "modal-button";
+}
+
+.modal-message {
+    grid-area: modal-message;
+}
+
+.modal-button {
+    grid-area: modal-button;
+    width: 100%;
+}
+
+@media (max-width: 629px) {
+    .modal-message-div {
+        width: 60%;
+        padding: 2rem;
+    }
+}

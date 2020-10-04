@@ -1,0 +1,42 @@
+.exercise-list-div {
+    display: grid;
+    place-items: center;
+    padding: 1rem;
+    background-color: white;   
+}
+
+.ul {
+    padding-inline-start: 0px;
+}
+
+.exercise-list-ul {
+    display: grid;
+    row-gap: 0.5rem;
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-areas: "exercise-list-li-div exercise-list-li-div exercise-list-li-div"
+                         "pagination-div pagination-div list-sort-select-div";
+}
+
+.exercise-list-li-div {
+    display: grid;
+    place-items: center;
+    grid-area: exercise-list-li-div;
+}
+
+.pagination-div {
+    display: grid;
+    grid-area: pagination-div;
+    place-items: center start;
+}
+
+.list-sort-select-div {
+    display: grid;
+    place-items: center end;
+    grid-area: list-sort-select-div;
+}
+
+.exercise-array-error-div {
+    max-width: 80%;
+    text-align: center;
+}

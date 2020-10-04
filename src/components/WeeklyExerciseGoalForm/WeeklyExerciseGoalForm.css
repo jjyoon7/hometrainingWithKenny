@@ -1,0 +1,33 @@
+.weekly-exercise-goal-form-div {
+    background-color: white;
+    padding: 1em;
+    width: 100%;
+}
+.weekly-exercise-goal-form {
+    display: grid;
+    column-gap: 0.55rem;
+    grid-template-columns: repeat(2, minmax(80px, 1fr));
+    grid-template-rows: minmax(40px, 50px);
+    grid-template-areas: "select-per-week goal-button";
+    place-items: center;
+    width: 100%;
+}
+
+.select-per-week {
+    display: flex;
+    grid-area: select-per-week;
+    min-width: 100%;
+    place-items: center;
+}
+
+.goal-button {
+    min-width: 100%;
+    grid-area: goal-button;
+}
+
+@media (max-width: 995px) {
+    .weekly-exercise-goal-form {
+        min-width: 100%;
+        place-items: center start;
+    }
+}

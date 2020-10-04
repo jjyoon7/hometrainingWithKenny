@@ -1,0 +1,112 @@
+.user-exercise-info-div {
+    background-color: white;
+    padding: 1rem;
+    display: grid;
+    place-items: center start;
+    grid-template-columns: repeat(4, minmax(2rem, 3.6rem));
+    column-gap: 2rem;
+    grid-template-areas: "exercise-duration-head-title exercise-duration-head-title exercise-duration-head-title exercise-duration-head-title"
+                         "exercise-duration-title-1 exercise-duration-middle-bar-1 exercise-duration-minuate-1 exercise-duration-minuate-indicator-1"
+                         "exercise-duration-title-2 exercise-duration-middle-bar-2 exercise-duration-minuate-2 exercise-duration-minuate-indicator-2"
+                         "exercise-duration-title-3 exercise-duration-middle-bar-3 exercise-duration-minuate-3 exercise-duration-minuate-indicator-3"
+                         "exercise-duration-title-4 exercise-duration-middle-bar-4 exercise-duration-minuate-4 exercise-duration-minuate-indicator-4";
+}
+
+.exercise-duration-head-title {
+    grid-area: exercise-duration-head-title;
+    font-size: 2.2rem;
+    margin-top: 0;
+}
+
+.exercise-duration-title-1 {
+    grid-area: exercise-duration-title-1;
+}
+.exercise-duration-title-2 {
+    grid-area: exercise-duration-title-2;
+}
+.exercise-duration-title-3 {
+    grid-area: exercise-duration-title-3;
+}
+.exercise-duration-title-4 {
+    grid-area: exercise-duration-title-4;
+}
+
+.exercise-duration-middle-bar-1 {
+    grid-area: exercise-duration-middle-bar-1;
+}
+.exercise-duration-middle-bar-2 {
+    grid-area: exercise-duration-middle-bar-2;
+}
+.exercise-duration-middle-bar-3 {
+    grid-area: exercise-duration-middle-bar-3;
+}
+.exercise-duration-middle-bar-4 {
+    grid-area: exercise-duration-middle-bar-4;
+}
+
+.exercise-duration-minuate-1 {
+    grid-area: exercise-duration-minuate-1;
+}
+.exercise-duration-minuate-2 {
+    grid-area: exercise-duration-minuate-2;
+}
+.exercise-duration-minuate-3 {
+    grid-area: exercise-duration-minuate-3;
+}
+.exercise-duration-minuate-4 {
+    grid-area: exercise-duration-minuate-4;
+}
+
+.exercise-duration-minuate-indicator-1 {
+    grid-area: exercise-duration-minuate-indicator-1;
+}
+.exercise-duration-minuate-indicator-2 {
+    grid-area: exercise-duration-minuate-indicator-2;
+}
+.exercise-duration-minuate-indicator-3 {
+    grid-area: exercise-duration-minuate-indicator-3;
+}
+.exercise-duration-minuate-indicator-4 {
+    grid-area: exercise-duration-minuate-indicator-4;
+}
+
+@media (min-width: 1130px) and (max-width: 1160px) {
+    .user-exercise-info-div {
+        column-gap: 2rem;
+        grid-template-columns: repeat(4, minmax(1rem, 1.8rem));
+    }
+    .user-exercise-info-div h2 {
+        font-size: 1.4rem;
+    }
+}
+
+@media (min-width: 1050px) and (max-width: 1129px) {
+    .user-exercise-info-div {
+        column-gap: 2.3rem;
+        grid-template-columns: repeat(4, minmax(1.2rem, 1.3rem));
+    }
+    .user-exercise-info-div h2 {
+        font-size: 1.35rem;
+    }
+}
+
+@media (min-width: 996px) and (max-width: 1049px) {
+    .user-exercise-info-div {
+        column-gap: 2rem;
+        grid-template-columns: repeat(4, minmax(1.25rem, 1.2rem));
+    }
+
+    .user-exercise-info-div h2 {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 995px) {
+    .user-exercise-info-div {
+        grid-template-columns: repeat(4, minmax(4rem, 1fr));
+        column-gap: 1.5rem;
+    }
+    .user-exercise-info-div h2 {
+        font-size: 1.4rem;
+    }
+}

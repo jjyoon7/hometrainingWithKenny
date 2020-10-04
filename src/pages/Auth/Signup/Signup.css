@@ -1,0 +1,91 @@
+.sign-up-form-div {
+    display: grid;
+    place-items: center;
+    background-color: white;
+    grid-template-columns: minmax(1em, 1fr) minmax(200px, 300px) minmax(1em, 1fr);
+    grid-template-rows: minmax(1em, 1fr) repeat(3, minmax(100px, 110px)) minmax(1em, 1fr);
+    grid-template-areas: ". . ."
+                         ". sign-up-form ."
+                         ". sign-up-form ."
+                         ". sign-up-button . "
+                         ". forgot-password-button ."
+                         ". . .";
+}
+
+
+.sign-up-form {
+    grid-area: sign-up-form;
+    min-width: 100%;
+    grid-template-areas: ". sign-up-name ."
+                         ". sing-up-name-error . "
+                         ". sign-up-email . " 
+                         ". sing-up-email-error . "
+                         ". sign-up-password . "
+                         ". sing-up-password-error . ";
+    line-height: 1.8rem;
+}
+
+.sign-up-form input {
+    width: 100%;
+    min-height: 2rem;
+    padding: 0.5rem;
+}
+
+.sign-up-name {
+    grid-area: sign-up-name;
+}
+
+.sign-up-name-error {
+    grid-area: sign-up-name-error;
+    height: 1rem;
+    margin-bottom: 0.7rem;
+}
+
+.sign-up-email {
+    grid-area: sign-up-email;
+}
+
+.sign-up-email-error {
+    grid-area: sign-up-email-error;
+    height: 1rem;
+    margin-bottom: 0.7rem;
+}
+
+.sign-up-password {
+    grid-area: sign-up-password;
+}
+
+.sign-up-password-error {
+    grid-area: sign-up-password-error;
+    height: 1rem;
+    margin-bottom: 0.7rem;
+}
+
+.sign-up-button {
+    grid-area: sign-up-button;
+}
+
+.forgot-password-button {
+    grid-area: forgot-password-button;
+    color: blue;
+    margin-top: -3rem;
+}
+
+@media (max-width: 995px) {
+    .sign-up-form-div {
+        height: 60vh;
+        display: grid;
+        grid-template-columns: minmax(1em, 1fr) minmax(200px, 300px) minmax(1em, 1fr);
+        grid-template-rows: minmax(1em, 1fr) repeat(3, minmax(40px, 80px)) minmax(1em, 1fr);
+        grid-template-areas: ". . ."
+                             ". sign-up-form ."
+                             ". sign-up-form ."
+                             ". sign-up-button . "
+                             ". forgot-password-button ."
+                             ". . .";
+    }
+
+    .forgot-password-button {
+        margin-top: 0;
+    }
+}

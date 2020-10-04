@@ -1,0 +1,100 @@
+.kenny-visual-img {
+    object-fit: contain;
+    display: block;
+    min-width: 100%;
+    z-index: 0;
+}
+
+.base {
+    z-index: 0;
+}
+
+.closed-eyes {
+    z-index: 1000;
+
+    -webkit-animation: close-eyes-animation 4s infinite;
+    -moz-animation: close-eyes-animation 4s infinite;
+    -o-animation: close-eyes-animation 4s infinite;
+    animation: close-eyes-animation 4s infinite;
+}
+
+.opened-eyes {
+    z-index: 100;
+
+    -webkit-animation: open-eyes-animation 4s infinite;
+    -moz-animation: open-eyes-animation 4s infinite;
+    -o-animation: open-eyes-animation 4s infinite;
+    animation: open-eyes-animation 4s infinite;
+}
+
+@-webkit-keyframes close-eyes-animation {
+    0%   {opacity: 0;}
+    3%   {opacity: 1;}
+    6%   {opacity: 0;}
+    9%  {opacity: 1;}
+    12%  {opacity: 0;}
+    100%  {opacity: 0;}
+}
+
+@-moz-keyframes close-eyes-animation {
+    0%   {opacity: 0;}
+    3%   {opacity: 1;}
+    6%   {opacity: 0;}
+    9%  {opacity: 1;}
+    12%  {opacity: 0;}
+    100%  {opacity: 0;}
+}
+
+@-o-keyframes close-eyes-animation {
+    0%   {opacity: 0;}
+    3%   {opacity: 1;}
+    6%   {opacity: 0;}
+    9%  {opacity: 1;}
+    12%  {opacity: 0;}
+    100%  {opacity: 0;}
+}
+
+@keyframes close-eyes-animation {
+    0%   {opacity: 0;}
+    3%   {opacity: 1;}
+    6%   {opacity: 0;}
+    9%  {opacity: 1;}
+    12%  {opacity: 0;}
+    100%  {opacity: 0;}
+}
+
+@-webkit-keyframes open-eyes-animation {
+    0%   {opacity: 1;}
+    3%   {opacity: 0;}
+    6%   {opacity: 1;}
+    9%  {opacity: 0;}
+    12%  {opacity: 1;}
+    100%  {opacity: 1;}
+}
+
+@-moz-keyframes open-eyes-animation {
+    0%   {opacity: 1;}
+    3%   {opacity: 0;}
+    6%   {opacity: 1;}
+    9%  {opacity: 0;}
+    12%  {opacity: 1;}
+    100%  {opacity: 1;}
+}
+
+@-o-keyframes open-eyes-animation {
+    0%   {opacity: 1;}
+    3%   {opacity: 0;}
+    6%   {opacity: 1;}
+    9%  {opacity: 0;}
+    12%  {opacity: 1;}
+    100%  {opacity: 1;}
+}
+
+@keyframes open-eyes-animation {
+    0%   {opacity: 1;}
+    3%   {opacity: 0;}
+    6%   {opacity: 1;}
+    9%  {opacity: 0;}
+    12%  {opacity: 1;}
+    100%  {opacity: 1;}
+}

@@ -1,0 +1,83 @@
+.log-in-div {
+    display: grid;
+    background-color: white;
+    place-items: center;
+    grid-template-columns: minmax(1em, 1fr) minmax(200px, 400px) minmax(1em, 1fr);
+    grid-template-rows: minmax(1em, 1fr) minmax(150px, 300px) minmax(1rem, 1.5rem) minmax(60px, 80px) minmax(1em, 1fr);
+    grid-template-areas: ". . ."
+                         ". log-in-form ."
+                         ". . ."
+                         ". forgot-password-button . "
+                         ". . .";
+                         
+}
+
+.log-in-form {
+    display: grid;
+    min-width: 100%;
+    grid-area: log-in-form;
+    row-gap: 0.5rem;
+    grid-template-areas: ". log-in-title ."
+                         ". log-in-email ."
+                         ". log-in-password . " 
+                         ". log-in-button . " 
+                         ". create-account-button . ";
+}
+
+.log-in-form input {
+    padding: 0.5rem;
+    height: 3rem;
+    min-width: 100%;
+}
+
+.log-in-title {
+    grid-area: log-in-title;
+}
+
+.log-in-email {
+    grid-area: log-in-email;
+}
+
+.log-in-password {
+    grid-area: log-in-password;
+}
+
+.log-in-button {
+    grid-area: log-in-button;
+}
+
+.create-account-button {
+    grid-area: create-account-button;
+}
+
+.create-account-text {
+    color: white;
+}
+
+.forgot-password-button {
+    grid-area: forgot-password-button;
+    color: blue;
+}
+
+.log-in-email-error, .log-in-email-password-error {
+    margin-top: 0.25rem;
+}
+
+@media (max-width: 995px) {
+    .log-in-div {
+        height: 60vh;
+    }
+
+    .forgot-password-button {
+        display: grid;
+        place-items: center;
+        min-width: 100%;
+    }
+
+    .forgot-password-button a {
+        font-size: 1.25rem;
+    }
+
+}
+
+

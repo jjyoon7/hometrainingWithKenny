@@ -1,0 +1,25 @@
+.nav-bar-items-div {
+    display: grid;
+    place-items: center end;
+    opacity: 0;
+    background-color: white;
+    padding: 0.5rem;
+    border: 2px dotted #0000ea;
+}
+
+.nav-bar-div:hover .nav-bar-items-div {
+    opacity: 1;
+}
+
+.nav-bar-icon {
+    font-size: 2.15rem;
+    cursor: pointer;
+} 
+
+.nav-bar-open {
+    display: inline-block;
+}
+
+.nav-bar-close {
+    display: none;
+}

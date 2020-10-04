@@ -1,0 +1,65 @@
+.exercise-form-div {
+    padding: 1rem;
+    background-color: white;
+    width: 100%;
+}
+
+.exercise-form-grid {
+    display: grid;
+    row-gap: 0.5rem;
+    margin-top: 0.2rem;
+    grid-template-columns: repeat(2, minmax(50px, 1fr));
+    grid-template-rows: repeat(2, minmax(30px, 50px));
+    grid-template-areas: "radio-option select-min"
+                         "radio-option fetch-button";
+    place-items: center start;
+}
+
+.radio-option {
+    grid-area: radio-option;
+    margin-top: 0.8rem;
+}
+
+@-moz-document url-prefix() {
+    .radio-option {
+        margin-top: 0;
+    }
+}
+
+.select-min {
+    display: flex;
+    grid-area: select-min;
+    min-width: 100%;
+}
+
+.fetch-button {
+    grid-area: fetch-button;
+}
+
+@media (max-width: 1149px) {
+    .exercise-form-grid {
+        margin-top: 0.6rem;
+        line-height: 1.8rem;
+        row-gap: 0.05rem;
+    }
+}
+
+@media (min-width: 536px) and (max-width: 995px) {
+    .exercise-form-div {
+        display: grid;
+        place-items: center;
+    }
+    .exercise-form-grid {
+        min-width: 100%;
+        display: grid;
+        column-gap: 1rem;
+        grid-template-columns: repeat(2, minmax(200px, 1fr));
+    }
+}
+
+@media (max-width: 536px) {
+    .exercise-form-grid {
+        min-width: 98%;
+        place-items: center start;
+    }
+}

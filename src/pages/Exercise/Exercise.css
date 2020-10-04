@@ -1,0 +1,26 @@
+.exercise-div {
+    background-color: white;
+    padding: 1rem;
+    display: grid;
+    place-items: center;
+    grid-template-rows: minmax(1rem, 1fr) minmax(100px, 200px) minmax(3rem, 4.5rem) minmax(1rem, 1fr);
+    grid-template-areas: ". ." 
+                         "exercise-item-li-individual exercise-item-li-individual"
+                         ". exercise-done-button"
+                         ". .";
+}
+
+.exercise-item-li-individual {
+    grid-area: exercise-item-li-individual;
+    list-style-type: none;
+}
+
+.exercise-done-button {
+    grid-area: exercise-done-button;
+}
+
+@media (max-width: 995px) {
+    .exercise-div {
+        min-height: 180%;
+    }
+}

@@ -1,0 +1,53 @@
+.manual-div {
+    padding: 1rem;
+    background-color: white;
+    display: grid;
+    column-gap: 1rem;
+    grid-template-areas: "manual-title manual-title"
+                         "manual-number-1 manual-text-1"
+                         "manual-number-2 manual-text-2"
+                         "manual-number-3 manual-text-3"
+                         "manual-number-4 manual-text-4";
+}
+
+.manual-title {
+    grid-area: manual-title;
+}
+
+.manual-number-1 {
+    grid-area: manual-number-1;
+}
+
+.manual-number-2 {
+    grid-area: manual-number-2;
+}
+
+.manual-number-3 {
+    grid-area: manual-number-3;
+}
+
+.manual-number-4 {
+    grid-area: manual-number-4;
+}
+
+.manual-text-1 {
+    grid-area: manual-text-1;
+}
+
+.manual-text-2 {
+    grid-area: manual-text-2;
+}
+
+.manual-text-3 {
+    grid-area: manual-text-3;
+}
+
+.manual-text-4 {
+    grid-area: manual-text-4;
+}
+
+@media (max-width: 995px) {
+    .manual-div {
+        grid-template-columns: minmax(0.5rem, 1rem) minmax(4rem, 1fr);
+    }
+}

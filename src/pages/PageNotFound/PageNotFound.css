@@ -1,0 +1,26 @@
+.page-not-found-div {
+    background-color: white;
+    padding: 1rem;
+    display: grid;
+    place-items: center center;
+    grid-template-areas: ". page-error-title .";
+}
+
+.page-error-title {
+    grid-area: page-error-title;
+    padding: 1rem;
+}
+
+@media (max-width: 995px) {
+    .page-error-title {
+        margin: 0;
+        padding: 0 4.25rem 0 5rem;
+    }
+}
+
+@media (max-width: 319px) {
+    .page-error-title {
+        margin: 0;
+        padding: 0 2.5rem 0 2.5rem;
+    }
+}

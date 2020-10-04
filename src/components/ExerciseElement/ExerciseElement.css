@@ -1,0 +1,53 @@
+.ri-heart-fill {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.ri-heart-line {
+    opacity: .7;
+    cursor: pointer;
+}
+
+.favorite {
+    color: var(--red);
+    font-size: 1.2rem;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    cursor: pointer;
+}
+
+.exercise-item-li {
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.exercise-item-div {
+    display: grid;
+    line-height: 2.2rem;
+    grid-template-columns:  minmax(180px, 500px) repeat(3, minmax(1rem, 1.5rem));
+    grid-template-rows: repeat(3, minmax(1fr, 55px));
+    grid-template-areas: "exercise-title icons-div icons-div icons-div"
+                        "video-element video-element video-element video-element"
+                        "video-element video-element video-element video-element";
+    list-style-type: none;
+}
+
+.exercise-title {
+    grid-area: exercise-title;
+}
+
+.icons-div {
+    grid-area: icons-div;
+    display: grid;
+    place-items: center end;
+    grid-template-areas: "heart-icon note-icon trash-icon";
+}
+
+.video-element {
+    grid-area: video-element;
+    display: grid;
+    place-items: center end;
+    min-width: 100%;
+}

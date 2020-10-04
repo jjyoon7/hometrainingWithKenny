@@ -1,0 +1,27 @@
+.bubble-div {
+    display: grid;
+    place-items: center;
+    position: relative;
+    text-align: center;
+}
+
+.bubble-img {
+    object-fit: contain;
+    place-items: self-end;
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.bubble-text {
+    position: absolute;
+    max-width: 85%;
+}
+
+@media (max-width: 1148px) {
+    .bubble-text {
+        font-size: 1.6rem;
+        position: absolute;
+        max-width: 80%;
+    }
+}

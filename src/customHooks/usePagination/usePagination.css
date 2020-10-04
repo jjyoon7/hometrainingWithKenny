@@ -1,0 +1,15 @@
+.pagination {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.pagination-button {
+    cursor: pointer;
+    padding: 0.2rem;
+    margin-right: 0.5rem;
+}
+
+.pagination-button-clicked {
+    border-bottom: 4px dotted #0000ea;
+}

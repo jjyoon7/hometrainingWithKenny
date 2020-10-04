@@ -1,0 +1,48 @@
+.top-three-exercises-div {
+    display: grid;
+    padding: 1rem;
+    background-color: white;  
+    grid-template-rows: minmax(1rem, 2rem) minmax(200px, 600px); 
+    grid-template-areas: "top-three-exercise-title"
+                         "top-three-exercises-ul-div";
+}
+
+.ul {
+    padding-inline-start: 0px;
+}
+
+.top-three-exercises-ul-div {
+    display: grid;
+    place-items: center;
+    grid-area: top-three-exercises-ul-div;
+    min-width: 100%;
+}
+
+.top-three-exercise-title {
+    grid-area: top-three-exercise-title;
+    font-size: 2rem;
+    margin-top: -0.5rem;
+}
+
+.top-three-exercises-ul {
+    display: grid;
+    row-gap: 0.5rem;
+}
+
+.error-message {
+    display: grid;
+    place-items: center;
+    min-height: 100%;
+}
+
+.top-three-content-div {
+    display: grid;
+    min-width: 100%;
+}
+
+@media (max-width: 995px) {
+    .top-three-exercises-div {
+        min-height: 395%;
+        grid-template-rows: minmax(1rem, 3rem) minmax(200px, 600px); 
+    }
+}

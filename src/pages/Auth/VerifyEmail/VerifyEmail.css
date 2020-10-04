@@ -1,0 +1,23 @@
+.verify-email-div {
+    display: grid;
+    place-items: center;
+    padding: 1rem;
+    background-color: white;
+    text-align: center;
+    grid-template-columns: minmax(1rem, 1fr) minmax(400px, 1fr) minmax(1rem, 1fr);
+    grid-template-areas: ". verify-form .";
+}
+
+.verify-form {
+    grid-area: verify-form;
+    display: grid;
+    place-items: center;
+    row-gap: 1rem;
+}
+
+@media (max-width: 995px) {
+    .verify-email-div {
+        height: 120%;
+        grid-template-columns: minmax(1rem, 1fr) minmax(190px, 3fr) minmax(1rem, 1fr);
+    }
+}
